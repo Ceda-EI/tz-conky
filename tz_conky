@@ -1,0 +1,30 @@
+alignment bottom_right
+background no
+border_width 5
+default_color ffffff
+double_buffer yes
+draw_borders no
+draw_outline no
+draw_shades no
+gap_x 50
+gap_y 50
+maximum_width 1000
+minimum_size 175
+no_buffers yes
+override_utf8_locale yes
+own_window yes
+own_window_title conky
+own_window_class Conky
+own_window_hints undecorated,below,sticky,skip_taskbar,skip_pager
+own_window_transparent yes
+own_window_type override
+text_buffer_size 8000
+total_run_times 0
+update_interval 1
+uppercase no
+use_xft yes
+xftalpha 1
+default_color ffffff
+
+TEXT
+${execp ./tz.sh}

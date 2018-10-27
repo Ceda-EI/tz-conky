@@ -10,5 +10,4 @@ A simple conky to show time from different timezones
 
 # Configuration
 
-To add or remove timezones, edit `tz.sh`. Each entry should be formatted like
-`timezone Region/City name_to_be_displayed`
+To add or remove timezones, edit `places` and `names` arrays in `tz.sh`.

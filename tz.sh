@@ -1,11 +1,20 @@
 #!/usr/bin/env bash
 
-timezone() {
-  echo '${font BankGothic Md BT:pixelsize=30}${alignr}'${2}: $(TZ=$1 date +%H:%M)'${font}'
+places=(Europe/Vilnius Asia/Tehran Europe/Oslo Europe/Dublin Australia/Victoria)
+names=(Vilnius Tehran Oslo Dublin Victoria)
+
+n_character(){
+  echo -n "$(python3 -c "print('{:<$1}'.format(\"$2\"))")"
 }
 
-timezone Europe/Vilnius Vilnius
-timezone Asia/Tehran Tehran
-timezone Europe/Oslo Oslo
-timezone Europe/Dublin Dublin
-timezone Australia/Victoria Victoria
+echo -n '${font Roboto Mono:pixelsize=20}'
+for i in ${names[@]}; do
+  n_character 15 $i
+done
+echo '${font}'
+
+echo -n '${font Roboto Mono:pixelsize=30}'
+for i in ${places[@]}; do
+  n_character 10 $(TZ=$i date +%H:%M)
+done
+echo '${font}'

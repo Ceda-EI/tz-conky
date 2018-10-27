@@ -1,4 +1,4 @@
-alignment bottom_right
+alignment bottom_middle
 background no
 border_width 5
 default_color ffffff
@@ -6,7 +6,7 @@ double_buffer yes
 draw_borders no
 draw_outline no
 draw_shades no
-gap_x 50
+gap_x 0
 gap_y 50
 maximum_width 1000
 minimum_size 175

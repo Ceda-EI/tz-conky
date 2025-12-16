@@ -6,7 +6,7 @@ A simple conky to show time from different timezones
 
 + `git clone https://gitlab.com/ceda_ei/tz-conky`
 + `cd tz-conky`
-+ `conky -c tz-conky`
++ `conky -c tz_conky`
 
 # Configuration
 
